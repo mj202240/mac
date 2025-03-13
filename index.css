@@ -1,6 +1,6 @@
 /* 공통 */
 body {
-  width: 100%;
+  width: 1920px;
   background-color: #161616;
   font-family: 'Pretendard', sans-serif;
 }
@@ -80,8 +80,48 @@ a {
   gap: 40px;
 }
 
-.topbar_menu > ul > li:hover {
-  text-decoration: underline white;
+.search_form {
+  display: inline-block;
+  width: 130px;
+  height: 20px;
+  position: relative;
+}
+
+.search_form > input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 0;
+  opacity: 0;
+}
+
+.search_form > input[type="checkbox"] + span::after {
+  content: "검색어를 입력";
+  font-weight: 100;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.search_form > input[type="checkbox"]:checked + span::after {
+  content: "";
+}
+
+.topbar_menu > ul > li {
+  display: block;
 }
 
 .topbar_menu > ul > li > a > span {
@@ -91,12 +131,16 @@ a {
 .topbar_menu > ul > li > a > span::after {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 150%;
   left: 0;
   width: 0;
   height: 2px;
   background-color: red;
-  transition: width .3s;
+  transition: width .2s;
+}
+
+.topbar_menu > ul > li:hover > a > span::after {
+  width: 100%;
 }
 
 .topbar_menu > ul > li > a > span::after {
@@ -120,7 +164,7 @@ a {
 .topbar_search > .search_box > i {
   width:17px;
   height: 17px;
-  margin: 0 13px 0 8px;
+  margin: 0 13px 0 16px;
   font-size: 17px;
 }
 
@@ -138,6 +182,36 @@ a {
   height: 17px;
 }
 
+.topbar_search > .search_mypage > nav {
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  position: absolute;
+  right: 180px;
+  top: 75px;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.topbar_search > .search_mypage:hover > nav {
+  visibility: visible;
+  cursor: pointer;
+  animation-name: search;
+  animation-duration: 1s;
+  position: relative;
+}
+
+@keyframes search {
+  0% {
+    bottom:10px;
+  }
+
+  100% {
+    bottom:0px;
+  }
+}
 /* 탑바 끝 */
 
 /* 배너시작 */
@@ -157,26 +231,68 @@ a {
   width: 100%;
   height: auto;
   top: 195px;
-  margin-left: 16px;
-}
-
-.banner_txt > .gap {
-  height: 20px;
-  width: 100%;
-}
-
-.banner_txt > .banner_txt_box{
-  gap: 20px;
-  border: 1px solid red;
+  margin-left: 194px;
+  gap: 40px;
   flex-direction: column;
 }
 
-
-.banner_txt > .banner_txt_box > button {
-  width: 116px;
-  height: 34px;
-  border-radius: 110px;
+.banner_box > .banner_txt > div {
+  animation-name: Banner;
+  animation-duration: 1s;
+  position:relative;
+  
 }
 
-/* 잘 올ㄹ라가는지 테스트 */
+@keyframes Banner {
+  0% {
+    bottom: -30px;
+    opacity: 0;
+  }
+
+  50% {
+    bottom: -15px;
+    opacity: 0;
+  }
+
+
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+
+  
+}
+
+.banner_box > .banner_txt > div:nth-child(1) {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: -20px;
+}
+
+.banner_box > .banner_txt > div:nth-child(2) {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.banner_box > .banner_txt > div:nth-child(3) {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.banner_box > .banner_txt > div:nth-child(4) {
+  font-size: 16px;
+  font-weight: 700;
+  width: 116px;
+  height: 34px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-radius: 110px;
+  cursor: pointer;
+}
+
 /* 배너 끝 */
+
+/* 중간섹션 1 시작 */
+
+/* 중간섹션 1 끝 */
