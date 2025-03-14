@@ -161,6 +161,7 @@ a {
 .topbar_search{
   margin-left: 393px;
   gap: 20px;
+  position: relative;
 }
 
 .topbar_search > .search_box {
@@ -186,9 +187,12 @@ a {
   font-size: 14px;
 }
 
-.topbar_search > nav i {
-  width: 17px;
-  height: 17px;
+.topbar_search i {
+  font-size: 17px;
+}
+
+.topbar_search > .search_mypage {
+  position: relative;
 }
 
 .topbar_search > .search_mypage > nav {
@@ -197,29 +201,37 @@ a {
   font-size: 10px;
   font-weight: 600;
   position: absolute;
-  right: 180px;
-  top: 75px;
-  z-index: 1;
+  right: 110px; /* 부모 기준으로 정렬 */
+  top: 30px; /* 아이콘 아래로 위치 */
+  z-index: 10; /* 다른 요소 위에 표시 */
   visibility: hidden;
+  opacity: 0; /* 애니메이션을 위해 초반에는 투명하게 */
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* 부드러운 효과 */
 }
 
 .topbar_search > .search_mypage:hover > nav {
   visibility: visible;
+  opacity: 1; /* 나타날 때 서서히 보이도록 설정 */
   cursor: pointer;
-  animation-name: search;
-  animation-duration: 1s;
-  position: relative;
 }
 
 @keyframes search {
+
   0% {
-    bottom:10px;
+    bottom: 10px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
   }
 
   100% {
-    bottom:0px;
+    bottom: 0px;
+    opacity: 1;
   }
 }
+
 /* 탑바 끝 */
 
 /* 배너시작 */
@@ -301,7 +313,6 @@ a {
 /* 배너 끝 */
 
 /* 중간섹션 1 시작 */
-/* 잘 되나 두 번째 확인 */
 .mid_box{
   width: 100%;
   height: 1955px;
