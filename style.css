@@ -42,6 +42,10 @@ a {
   flex-grow: 1;
 }
 
+.text-ai-c{
+  text-align: center;
+}
+
 .block {
   display: block;
 }
@@ -64,6 +68,11 @@ a {
 
 .object-fit{
   object-fit: cover;
+}
+
+.gap{
+  width: 100%;
+  height: 200px;
 }
 
 /* 탑바 시작 */
@@ -185,7 +194,6 @@ a {
 .topbar_search > .search_mypage > nav {
   padding: 10px;
   background-color: white;
-  text-align: center;
   font-size: 10px;
   font-weight: 600;
   position: absolute;
@@ -228,7 +236,7 @@ a {
 /* 배너 텍스트 */
 .banner_box > .banner_txt{ 
   position: absolute;
-  width: 100%;
+  width: auto;
   height: auto;
   top: 195px;
   margin-left: 194px;
@@ -284,7 +292,6 @@ a {
   font-weight: 700;
   width: 116px;
   height: 34px;
-  text-align: center;
   color: black;
   background-color: white;
   border-radius: 110px;
@@ -296,8 +303,22 @@ a {
 /* 중간섹션 1 시작 */
 /* 잘 되나 두 번째 확인 */
 .mid_box{
-  width: 40px;
-  height: 40px;
-  background-color: blue;
+  width: 100%;
+  height: 1955px;
+  background-color: gray;
+}
+
+.mid_box > .mid_txt {
+  
+}
+
+.mid_box > .mid_txt > .mid_text_box{
+  flex-direction: column;
+  gap: 662px;
+}
+
+.mid_box > .mid_txt > .mid_text_box  span {
+  font-size: 120px;
+  font-weight: 900;
 }
 /* 중간섹션 1 끝 */
