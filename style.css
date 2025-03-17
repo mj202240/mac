@@ -320,15 +320,21 @@ a {
   position: relative;
 }
 
+/* 중간섹션-텍스트 */
 .mid_box > .mid_txt {
   flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index:10;
 }
 
 .mid_box > .mid_txt > .mid_text_box{
   flex-direction: column;
   gap: 662px;
-  z-index: 10;
+  border: 1px solid blue;
+  position: absolute;
 }
+
 .mid_box > .mid_txt > .mid_text_box  div {
   position: sticky;
   top: 0;
@@ -340,12 +346,9 @@ a {
   font-weight: 900;
 }
 
-.mid_bg{
-  position:absolute;
-  width:1920px;
-  height:1242px;
-  background-color:#902228;
-  top:80px;
+/* 중간섹션-이미지 */
+.img_box{
+  position: relative;
 }
 
 .mid_img {
@@ -357,5 +360,43 @@ a {
   z-index: 1;
   position: absolute;
   top: -110px;
+  align-items: center;
 }
+
+.mid_bg{
+  position:absolute;
+  width:1920px;
+  height:1242px;
+  background-color:#902228;
+  top:80px;
+}
+
+/* 스와이퍼 시작 */
+.swiper {
+  width: 1900;
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* 중간섹션 1 끝 */
+/* 왜 go live가 안됨? */
