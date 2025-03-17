@@ -9,13 +9,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <!-- 스와이퍼 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- 불러오기 -->
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
 </head>
 
 <body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+
   <section_topbar>
     <div class="topbar_box flex flex-ai-c margin">
 
@@ -37,18 +41,18 @@
         </ul>
       </div>
 
-      <div class="topbar_search flex flex-ai-c">
+      <div class="topbar_search flex flex-ai-c relative">
         <nav class="search_box flex flex-ai-c">
           <i class="fa-solid fa-magnifying-glass white"></i>
           <nav class="search_txt">
-            <div class="search_form">
+            <div class="search_form relative">
               <input type="checkbox">
               <span class="white"></span>
             </div>
           </nav>
         </nav>
 
-        <nav class="search_mypage">
+        <nav class="search_mypage relative">
           <i class="fa-solid fa-circle-user white"></i>
           <nav class="flex flex-jc-c flex-ai-c text-ai-c">
             <span>
@@ -67,7 +71,7 @@
   </section_topbar>
 
   <section_banner>
-    <div class="banner_box">
+    <div class="banner_box relative">
       <div class="banner_img_box">
         <img src="/mac_img/image 9.png" alt="" class="object-fit">
       </div>
@@ -84,22 +88,131 @@
   <div class="gap"></div>
 
   <section_mid_1>
-    <div class="mid_box">
+    <div class="mid_box relative">
       <div class="mid_txt flex flex-ai-c text-ai-c">
         <nav class="mid_text_box flex flex flex-jc-c flex-ai-c white">
           <div><span style="color: #D94951">NEW</span>
-            <span> &nbsp; M·A·C</span>
+            <span>&nbsp;M·A·C</span>
           </div>
           <div><span>Nude Collection</span></div>
         </nav>
       </div>
-    <div class="img_box flex flex-ai-c flex-jc-c text-ai-c">
+    <div class="img_box flex flex-ai-c flex-jc-c relative">
       <div class="mid_img">
         <img src="/mac_img/Group 18.png" alt="">
       </div>
       <div class="mid_bg"></div>
     </div>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+
+          <div class="slide_box">
+            <div class="slide_box_product flex">
+
+              <div class="product_bestseller">
+                <div class="bestseller_box white flex flex-jc-c flex-ai-c">BEST SELLER</div>
+              </div>
+
+              <div class="product_add_bag flex">
+                <div class="icon cart_i flex flex-jc-c flex-ai-c white">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="icon add_i flex flex-jc-c flex-ai-c white">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+              </div>
+            </div>
+            <div class="slide_box_img flex flex-jc-c flex-ai-c">
+              <img src="/mac_img/mac_nude_1.png" alt="">
+            </div>
+            <div class="slide_box_text flex flex-jc-c flex-ai-c text-ai-c">
+              <span>파우더 키스 리퀴드 립컬러</span>
+              <span>#벨벳 #매트 #블러 #롱 웨어링</span>
+            </div>
+            <div class="slide_box_color flex flex-jc-c flex-ai-c text-ai-c">
+              <div class="color_text">Color</div>
+              <div class="color_palette">
+                <ul style="gap: 8px;" class="flex">
+                  <li style="background-color: #85554C;"></li>
+                  <li style="background-color: #CE664D;"></li>
+                  <li style="background-color: #EE3C2E;"></li>
+                  <li style="background-color: #EE2E61;"></li>
+                  <li style="background-color: #CF4560;"></li>
+                  <li style="background-color: #D3605B;"></li>
+                  <li style="background-color: #B61F56;"></li>
+                  <li style="background-color: #B61F56;"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_box_price">
+              <span>₩ 49,000</span>
+            </div>
+          </div>
+
+          <div class="slide_box">
+            <div class="slide_box_product flex">
+
+              <div style="gap: 8px;" class="product_bestseller flex">
+                <div class="bestseller_box white flex flex-jc-c flex-ai-c">BEST SELLER</div>
+                <div class="bestseller_box white flex flex-jc-c flex-ai-c">SOLD OUT</div>
+              </div>
+
+              <div class="product_add_bag flex">
+                <div class="icon cart_i flex flex-jc-c flex-ai-c white">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="icon add_i flex flex-jc-c flex-ai-c white">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide_box_img flex flex-jc-c flex-ai-c">
+              <img src="/mac_img/mac_nude_2.png" alt="">
+            </div>
+            <div class="slide_box_text flex flex-jc-c flex-ai-c text-ai-c">
+              <span>러스터 글래스 립스틱</span>
+              <span>#글로스 #맑은색감 #가볍</span>
+            </div>
+            <div class="slide_box_color flex flex-jc-c flex-ai-c text-ai-c">
+              <div class="color_text">Color</div>
+              <div class="color_palette">
+                <ul style="gap: 8px;" class="flex">
+                  <li style="background-color: #EC6C65;"></li>
+                  <li style="background-color: #F05480;"></li>
+                  <li style="background-color: #E7687F;"></li>
+                  <li style="background-color: #D55E6B;"></li>
+                  <li style="background-color: #55382A;"></li>
+                  <li style="background-color: #895950;"></li>
+                  <li style="background-color: #D94E51;"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slide_box_price">
+              <span>₩ 43,000</span>
+            </div>
+          </div>
+          </nav>
+        </div>
+        <div class="swiper-slide"></div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
     </div>
   </section_mid_1>
+
+  <div class="gap"></div>
+
+  <section_mid_2>
+    <div class="mid_box_2"></div>
+  </section_mid_2>
+
 </body>
 </html>
