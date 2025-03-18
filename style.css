@@ -327,24 +327,20 @@ a {
   z-index:10;
 }
 
-.mid_box > .mid_txt > .mid_wrapper {
- width: 1500px;
-}
-
-.mid_box > .mid_txt > .mid_wrapper > .mid_text_box{
+.mid_box > .mid_txt > .mid_text_box {
   flex-direction: column;
   gap: 662px;
-  position: absolute;
   width: 100%;
-  border: 5px solid pink;
+  position: absolute;
   top: 0;
+  border: 5px solid pink;
 }
 
-.mid_box > .mid_txt > .mid_wrapper >.mid_text_box  div {
+.mid_box > .mid_txt > .mid_text_box  div {
   z-index: 2;
 }
 
-.mid_box > .mid_txt > .mid_wrapper > .mid_text_box  span {
+.mid_box > .mid_txt > .mid_text_box  span {
   font-size: 120px;
   font-weight: 900;
 }
@@ -372,14 +368,13 @@ a {
   height:1242px;
   background-color:#902228;
   position: absolute;
-  top: 10px;
+  top: 100px;
 }
 
 /* 스와이퍼 시작 */
- .mid_box .swiper {
+.swiper {
   width: 1532px;
   height: 640px;
-  top: 1000px;
   border: 5px solid green;
   z-index: 15;
 }
