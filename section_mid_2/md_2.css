@@ -104,10 +104,12 @@ a {
 
 .content_text_2 {
   width: 100%;
-  height: 200px;
+  height: 167px;
   font-size: 24px;
   justify-content: right;
   align-items: flex-end;
+  cursor: pointer;
+  margin-bottom: 37px;
 }
 
 .md2_content_2 {
@@ -116,4 +118,32 @@ a {
   background-color: white;
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+}
+
+.swiper-pagination {
+  --swiper-theme-color:black;
+}
 /* md2 끝 */
