@@ -277,8 +277,6 @@ a {
     bottom: 0px;
     opacity: 1;
   }
-
-  
 }
 
 .banner_box > .banner_txt > div:nth-child(1) {
@@ -311,72 +309,80 @@ a {
 /* 배너 끝 */
 
 /* 중간섹션 1 시작 */
+.section_mid_1 {
+  position: relative;
+  height: 1955px;
+  padding-top: 130px;
+  box-sizing: border-box;
+}
+
+.mid_bg{
+  background-color:#902228;
+  position: absolute;
+  height: 1242px;
+  width: 100%;
+  top: 207px;
+  z-index: -2;
+}
 
 .mid_box{
   width: 100%;
-  height: 1955px;
-  border: 5px solid yellow;
-  position: relative;
+  height: 100%;
+}
+
+.sec_mid_1__sticky {
+  position: absolute;
+  z-index:100;
+  width: 100%;
+  height: 100%;
 }
 
 /* 중간섹션-텍스트 */
 .mid_box > .mid_txt {
-  flex-direction: column;
   position: sticky;
   top: 0;
-  z-index:10;
+  left: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.mid_box > .mid_txt * {
+  position: relative;
 }
 
 .mid_box > .mid_txt > .mid_text_box {
-  flex-direction: column;
-  gap: 662px;
   width: 100%;
-  position: absolute;
   top: 0;
-  border: 5px solid pink;
-}
-
-.mid_box > .mid_txt > .mid_text_box  div {
-  z-index: 2;
-}
-
-.mid_box > .mid_txt > .mid_text_box  span {
   font-size: 120px;
   font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.mid_box > .mid_txt > .mid_text_box div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
+.mid_box > .mid_txt > .mid_text_box div p {
+  margin: 0;
+  padding: 0;
 }
 
 /* 중간섹션-이미지 */
-.img_box {
-  flex-direction: column;
-}
-
 .mid_img {
   max-width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  object-fit: cover;
   z-index: 1;
-  align-items: center;
-  align-self: center;
-  /* position: absolute; */
   top: 0;
-}
-
-.mid_bg{
-  width:1920px;
-  height:1242px;
-  background-color:#902228;
   position: absolute;
-  top: 100px;
 }
 
 /* 스와이퍼 시작 */
 .swiper {
+  margin-top: 125px;
   width: 1532px;
-  height: 640px;
-  border: 5px solid green;
-  z-index: 15;
+  height: 630px;
 }
 
 .swiper-slide {
@@ -498,5 +504,6 @@ a {
   width: 100%;
   height: 990px;
   background-color: gray;
+  /* display: none; */
 }
 /* 중간섹션 2 끝 */
