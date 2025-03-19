@@ -312,7 +312,7 @@ a {
 .section_mid_1 {
   position: relative;
   height: 1955px;
-  padding-top: 130px;
+  padding-top: 130px;//대신 gap 줘도 될 듯?
   box-sizing: border-box;
 }
 
@@ -383,6 +383,8 @@ a {
   margin-top: 125px;
   width: 1532px;
   height: 630px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .swiper-slide {
@@ -392,11 +394,6 @@ a {
   justify-content: center;
   align-items: center;
   gap: 100px;
-}
-
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .slide_box{
