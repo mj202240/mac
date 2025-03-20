@@ -531,7 +531,7 @@ a {
 }
 
 .md2_content_2 {
-  width: 1200px;
+  width: 1300px;
   height: 339px;
   background-color: white;
   border: 1px solid black;
@@ -567,3 +567,297 @@ a {
   --swiper-theme-color:black;
 }
 /* 중간섹션 2 끝 */
+
+/* 중간섹션3 시작 */
+
+.abhaya-libre-extrabold {
+  font-family: "Abhaya Libre", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.mid_color_box{
+  width: 437px;
+  height: 32px;
+  background-color: #FF0040;
+  opacity: 0.5;
+  position: absolute;
+  top: 10px;
+  z-index: -1;
+
+}
+
+.mid_3_box{
+  width: 100%;
+  height: 1193px;
+}
+
+.mid_3_text_box1 {
+  font-size: 60px;
+  margin-bottom: 39px;
+}
+
+.mid_3_text_box2 {
+  font-size: 260px;
+  /* color: red; */
+}
+
+.mid_3_text_box3 {
+  font-size: 30px;
+  width: 225px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1000px;
+  gap: 12px;
+  border-radius: 100px;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.mid_3_text_box3:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.mid_3_text_box3:hover > i {
+  color: black;
+}
+
+/* .cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  top: -300px;
+  left: -300px;
+  border-radius: 50%;
+  background-color: white;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  transition: width .1s, height .1s;
+  mix-blend-mode: difference;
+}
+
+.cursor-shadow {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: -300px;
+  left: -300px;
+  border-radius: 50%;
+  background-color: white;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width .1s, height .1s, top .1s, left .1s;
+  z-index: 99;
+  mix-blend-mode: difference;
+}
+
+.need-to-cursor-big .cursor-shadow {
+  width: 100px;
+  height: 100px;
+}
+
+.cursor-big {
+  color: red;
+  cursor: pointer;
+} */
+
+/* 왜 안커지지 나중에 동영상 보기, 텍스트 애니메이션 수정? */
+/* 중간섹션3 끝 */
+
+/* 중간섹션4 시작 */
+/* mid_4_box1시작 */
+.mid_4_box{
+  width: 100%;
+  height: 2295px;
+}
+
+.mid_4_text_box {
+  width: 100%;
+  height: auto;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 90px;
+}
+
+.mid4_bg {
+  width: 100%;
+  height: 710px;
+  background-color: #8F2B42;
+  position: absolute;
+  top: 130px;
+  z-index: -1;
+}
+
+.mid4_img img {
+  width:650px;
+  height: 870px;
+}
+
+.mid4_content {
+  width: 889px;
+  height: 710px;
+  margin-top: 130px;
+}
+
+.mid4_content > .content4_text {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 59px 0 0 53px;
+}
+
+.content4_slide {
+  width: 1077px;
+  height: 531px;
+  border: 1px solid yellow;
+}
+
+/* md4_1 스와이퍼 시작 */
+.swiper_md4 {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper_md4 > .swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper_md4 > .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper_md4 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.md4_slide_box {
+  width: 383px;
+  height: 370px;
+  background-color: white;
+}
+
+.md4_color {
+  width: 100%;
+  height: 35px;
+  outline: 1px solid black;
+}
+
+.md4_slide_box .md4_text_box {
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 700;
+  gap: 20px;
+}
+
+.mid_4_margin {
+  width: 100%;
+  height: 146px;
+}
+
+/* mid_4_box2시작 */
+.mid_4_box2 > .mid4_bg {
+  width: 100%;
+  height: 710px;
+  background-color: #FF98B2;
+  position: absolute;
+  top: 130px;
+  z-index: -1;
+}
+
+.mid_4_box2 > .mid4_content > .content4_text {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 59px 0 0 0px;
+}
+
+.mid_4_box2 > .mid4_content > .content4_slide {
+  width: 100%;
+  height: 531px;
+  border: 1px solid red;
+}
+/* 중간섹션4 끝 */
+
+/* 텍스트 애니메이션 시작 */
+
+.section_txt_ani {
+  background-color: white;
+  width: 1920px;
+  height: auto;
+}
+
+.ani_box {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 20px 0 20px 0;
+
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: ani_box 20s linear infinite;
+  -webkit-animation: ani_box 20s linear infinite;
+  animation: ani_box 20s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes ani_box {
+  0% {
+      -moz-transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes ani_box {
+  0% {
+      -webkit-transform: translateX(100%);
+  }
+  100% {
+      -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes ani_box {
+  0% {
+      -moz-transform: translateX(100%); /* Firefox bug fix */
+      -webkit-transform: translateX(100%); /* Firefox bug fix */
+      transform: translateX(100%);
+  }
+  100% {
+      -moz-transform: translateX(-100%); /* Firefox bug fix */
+      -webkit-transform: translateX(-100%); /* Firefox bug fix */
+      transform: translateX(-100%);
+  }
+}
+/* 텍스트 애니메이션 끝 */
+
+/* 인스타그램 시작 */
+.sns_box {
+  width: 100%;
+  height: 576px;
+  border: 3px solid red;
+}
+
+.sns_text {
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 90px;
+}
+/* 인스타그램 끝 */
