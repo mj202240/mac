@@ -717,7 +717,6 @@ a {
 .content4_slide {
   width: 1077px;
   height: 531px;
-  border: 1px solid yellow;
 }
 
 /* md4_1 스와이퍼 시작 */
@@ -730,17 +729,16 @@ a {
 
 .swiper_md4 > .swiper-wrapper > .swiper-slide {
   text-align: center;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid yellow;
 }
 
 .md4_slide_box {
   width: 383px;
   height: 370px;
   background-color: white;
-  border: 5px solid pink;
 }
 
 .swiper_md4 > .swiper-wrapper > .swiper-slide img {
@@ -753,6 +751,13 @@ a {
   width: 100%;
   height: 35px;
   outline: 1px solid black;
+}
+
+.md4_color_box {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: #651D2A;
 }
 
 .md4_text_box {
