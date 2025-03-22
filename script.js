@@ -68,8 +68,4 @@ var swiper = new Swiper(".swiper_sns", {
     delay: 2500,
     disableOnInteraction: false,
   },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
 });

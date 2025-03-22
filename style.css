@@ -750,14 +750,28 @@ a {
 .md4_color {
   width: 100%;
   height: 35px;
-  outline: 1px solid black;
 }
 
-.md4_color_box {
+.slide_box_2 .md4_color_box {
   width: 18px;
   height: 18px;
   border-radius: 100%;
   background-color: #651D2A;
+  margin-left: 26px;
+}
+
+.slide_box_3 .md4_color_box {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: #BB5B59;
+  margin-left: 26px;
+}
+
+.md4_color_name {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 8px;
 }
 
 .md4_text_box {
