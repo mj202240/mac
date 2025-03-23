@@ -50,7 +50,7 @@ $('.cursor-big').mouseleave(function() {
 
 //md4
 var swiper = new Swiper(".swiper_md4", {
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   spaceBetween: 10,
   loop: true,
   navigation: {
