@@ -404,6 +404,10 @@ a {
   background-color: white;
 }
 
+.swiper-pagination-bullet {
+  background-color: white;
+}
+
 /* 상품박스 안에 있는 요소 시작 */
 
 .slide_box_product{
@@ -630,8 +634,8 @@ a {
   color: black;
 }
 
-/* .cursor {
-  position: fixed;
+.cursor {
+  position: absolute;
   width: 20px;
   height: 20px;
   top: -300px;
@@ -668,7 +672,7 @@ a {
 .cursor-big {
   color: red;
   cursor: pointer;
-} */
+}
 
 /* 왜 안커지지 나중에 동영상 보기, 텍스트 애니메이션 수정? */
 /* 중간섹션3 끝 */
@@ -771,8 +775,16 @@ a {
   background-color: #935D69;
 }
 
-.slide_box_6 .md4_color_box {
+.slide_box_7 .md4_color_box {
   background-color: #C2A386;
+}
+
+.slide_box_8 .md4_color_box {
+  background-color: #DB6263;
+}
+
+.slide_box_9 .md4_color_box {
+  background-color: #1D1E21;
 }
 
 .md4_color_name {
