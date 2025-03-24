@@ -634,7 +634,7 @@ a {
   color: black;
 }
 
-.cursor {
+/* .cursor {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -650,7 +650,7 @@ a {
 }
 
 .cursor-shadow {
-  position: fixed;
+  position:absolute;
   width: 30px;
   height: 30px;
   top: -300px;
@@ -662,7 +662,7 @@ a {
   transition: width .1s, height .1s, top .1s, left .1s;
   z-index: 99;
   mix-blend-mode: difference;
-}
+} */
 
 .need-to-cursor-big .cursor-shadow {
   width: 100px;
@@ -785,6 +785,14 @@ a {
 
 .slide_box_9 .md4_color_box {
   background-color: #1D1E21;
+}
+
+.slide_box_10 .md4_color_box {
+  background-color: #EFD4CE;
+}
+
+.slide_box_11 .md4_color_box {
+  background-color: #000;
 }
 
 .md4_color_name {
