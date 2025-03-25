@@ -69,3 +69,7 @@ var swiper = new Swiper(".swiper_sns", {
     disableOnInteraction: false,
   },
 });
+
+// 스와이퍼 합친 것 : 
+// Freemode 
+// Autoplay
