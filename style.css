@@ -7,8 +7,13 @@ body {
 
 /* 폰트 */
 @import url('https://cdn.jsdelivr.net/npm/pretendard@1.3.6/dist/web/static/pretendard.css');
-@import url('https://fastly.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css');
-/* ㄴ 눈누-wanted-sans */
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.04em;
+}
 
 /* 노멀라이즈 */
 body, ul, li {
@@ -260,7 +265,6 @@ a {
   animation-name: Banner;
   animation-duration: 1s;
   position:relative;
-  
 }
 
 @keyframes Banner {
@@ -362,7 +366,7 @@ a {
   width: 100%;
   top: 0;
   font-size: 120px;
-  font-weight: 900;
+  /* font-weight: 900; */
   margin-bottom: 10px;
 }
 
@@ -371,18 +375,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* font-family: din-2014, sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;   */
-  font-family: 'Wanted Sans Variable', sans-serif;
-  font-weight: 700; /* 굵기도 설정 가능 */
 }
 
 .mid_box > .mid_txt > .mid_text_box div p {
   margin: 0;
   padding: 0;
-  
 }
 
 /* 중간섹션-이미지 */
@@ -539,22 +536,24 @@ a {
 
 .content_text_1 {
   font-size: 80px;
-  font-weight: 900;
+  /* font-weight: 900; */
+  border: 1px solid red;
 }
 
 .content_text_2 {
   width: 100%;
-  height: 167px;
+  height: 127px;
   font-size: 24px;
   justify-content: right;
   align-items: flex-end;
   cursor: pointer;
   margin-bottom: 37px;
+  border: 1px solid yellow;
 }
 
 .content_text_2 > img {
   position: absolute;
-  right: -42px;
+  right: -22px;
   bottom: -10px;
 }
 
@@ -585,8 +584,6 @@ a {
 
 .swiper_md2 > .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   width: 250px;
   height: 250px;
@@ -772,14 +769,15 @@ a {
   object-fit: cover;
 }
 
-.swiper_md4 > .swiper-button-next, .swiper-button-prev {
+.content4_slide > .swiper_md4 > .swiper-button-next,
+.content4_slide > .swiper_md4 > .swiper-button-prev {
   outline: 1px solid red;
   position: absolute;
   top: 35px;
   margin-left: 100px;
 }
 
-.swiper_md4 > .swiper-button-prev {
+.swiper_md4 >  .swiper-button-prev {
   left: 10px; /* '이전' 버튼 왼쪽 위치 */
 }
 
