@@ -1,6 +1,7 @@
 /* 공통 */
 body {
   width: 1920px;
+  overflow-x: hidden;
   background-color: #161616;
   font-family: 'Pretendard', sans-serif;
 }
@@ -628,9 +629,9 @@ a {
   opacity: 0;
 }
 
-.tracking-in-expand {
-	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+.text-focus-in {
+	-webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 /* ----------------------------------------------
@@ -646,27 +647,27 @@ a {
  * ----------------------------------------
  */
 
- @-webkit-keyframes tracking-in-expand {
+ @-webkit-keyframes text-focus-in {
   0% {
-    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
     opacity: 0;
   }
-  40% {
-    opacity: 0.6;
-  }
   100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
     opacity: 1;
   }
 }
-@keyframes tracking-in-expand {
+@keyframes text-focus-in {
   0% {
-    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
     opacity: 0;
   }
-  40% {
-    opacity: 0.6;
-  }
   100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
     opacity: 1;
   }
 }
@@ -705,9 +706,8 @@ a {
 
 /* 중간섹션4 시작 */
 /* mid_4_box1시작 */
-.mid_4_box{
+.mid_4_box1{
   width: 100%;
-  height: 2295px;
 }
 
 .mid_4_text_box {
@@ -741,11 +741,11 @@ a {
 .mid4_content > .content4_text {
   font-size: 48px;
   font-weight: 600;
-  margin: 59px 0 0 53px;
+  margin: 59px 0 0 45px;
 }
 
 .content4_slide {
-  width: 1077px;
+  width: 950px;
   height: 531px;
 }
 
@@ -757,18 +757,26 @@ a {
   margin-right: auto;
 }
 
+.swiper_md4 > .swiper-wrapper {
+  width: 1070px;
+  box-sizing: border-box;
+}
+
 .swiper_md4 > .swiper-wrapper > .swiper-slide {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid yellow;
 }
 
 .md4_slide_box {
   width: 383px;
   height: 370px;
   background-color: white;
+}
+
+.md4_slide_box .md4_img_box img{
+  width: 220px;
 }
 
 .swiper_md4 > .swiper-wrapper > .swiper-slide img {
@@ -779,18 +787,18 @@ a {
 
 .content4_slide > .swiper_md4 > .swiper-button-next,
 .content4_slide > .swiper_md4 > .swiper-button-prev {
-  outline: 1px solid red;
   position: absolute;
-  top: 35px;
-  margin-left: 100px;
+  top: 50px;
+  margin-left: 40px;
+  transform:scale(.4);
 }
 
 .swiper_md4 >  .swiper-button-prev {
-  left: 10px; /* '이전' 버튼 왼쪽 위치 */
+  left: 0px; /* '이전' 버튼 왼쪽 위치 */
 }
 
 .swiper_md4 > .swiper-button-next {
-  left: 70px; /* '다음' 버튼 오른쪽 위치 */
+  left: 40px; /* '다음' 버튼 오른쪽 위치 */
 }
 
 .md4_color {
@@ -851,7 +859,6 @@ a {
 }
 
 .md4_text_box div:nth-child(1) {
-  border: 1px solid red;
   width: 100%;
   height: 50px;
   display: flex;
@@ -878,13 +885,22 @@ a {
 .mid_4_box2 > .mid4_content > .content4_text {
   font-size: 48px;
   font-weight: 600;
-  margin: 59px 0 0 0px;
+  margin: 59px 0 0 29px;
 }
 
 .mid_4_box2 > .mid4_content > .content4_slide {
   width: 100%;
   height: 531px;
 }
+
+.swiper_md4 > .swiper-button-prev-2 {
+  left: -20px;
+}
+
+.swiper_md4 > .swiper-button-next-2 {
+  left: 20px;
+}  
+
 /* 중간섹션4 끝 */
 
 /* 텍스트 애니메이션 시작 */

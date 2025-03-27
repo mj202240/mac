@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("tracking-in-expand"); // 애니메이션 클래스 추가
+          entry.target.classList.add("text-focus-in"); // 애니메이션 클래스 추가
           entry.target.style.opacity = "1"; // 요소 표시
         }
       });
@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //md4
 var swiper = new Swiper(".swiper_md4", {
-  slidesPerView: 'auto',
-  spaceBetween: 10,
-  loop: true,
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  loop: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -66,6 +66,6 @@ var swiper = new Swiper(".swiper_sns", {
     disableOnInteraction: false,
   },
 });
-// 스와이퍼 합친 것 : 
-// Freemode 
+// 스와이퍼 합친 것 :
+// Freemode
 // Autoplay
