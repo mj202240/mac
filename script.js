@@ -24,28 +24,25 @@ var swiper = new Swiper(".swiper_md2", {
   },
 });
 
+AOS.init();
+
 // md3
-const $cursor = $('.cursor');
-const $cursorShadow = $('.cursor-shadow');
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("tracking-in-expand"); // 애니메이션 클래스 추가
+          entry.target.style.opacity = "1"; // 요소 표시
+        }
+      });
+    },
+    {
+      threshold: 0.3, // 30% 이상 화면에 나타나면 실행
+    }
+  );
 
-$(window).mousemove(function(e) {    
-    $cursor.css({
-        top: e.clientY,
-        left: e.clientX
-    });
-    
-    $cursorShadow.css({
-        top: e.clientY,
-        left: e.clientX
-    });
-});
-
-$('.cursor-big').mouseenter(function() {
-    $('html').addClass('need-to-cursor-big');
-});
-
-$('.cursor-big').mouseleave(function() {
-    $('html').removeClass('need-to-cursor-big');
+  document.querySelectorAll(".mid_3_text_box1").forEach((el) => observer.observe(el));
 });
 
 //md4

@@ -20,10 +20,13 @@
     <!-- 불러오기 -->
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <script src="script.js" defer></script>
 </head>
@@ -331,20 +334,33 @@
     <section class="section_mid_2">
         <div class="mid_box_2 margin flex">
           <div class="md2_img_box object-fit">
-            <img src="/mac_img/md2_img.png" alt="">
+            <div data-aos="fade-right">
+                <img src="/mac_img/md2_img.png" alt="">
+            </div>
           </div>
           <div class="md2_content white flex">
             <div class="md2_content_1 relative">
               <div class="content_text_1 anton-regular">
-                <span>
-                  NEW!
-                  <br>
-                  <div style="color: #FF98B2;">
-                    Strobe Beam 
-                  <br>
-                  Liquid Blush
-                  </div>
-                </span>
+                <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="600">
+                    <span>
+                        NEW!
+                        <br>
+                        <div data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="900">
+                        <div style="color: #FF98B2;">
+                          Strobe Beam 
+                        <br>
+                        Liquid Blush
+                        </div>
+                        </div>
+                      </span>
+                </div>
+            
               </div>
               <div class="content_text_2 flex">
                 <span>나만의 컬러 찾기</span>
@@ -352,11 +368,10 @@
               </div>
             </div>
     
-            <div class="md2_content_2">
+            <div class="md2_content_2 flex">
               <div class="swiper swiper_md2">
-                <div class="swiper-wrapper">
-    
-                  <div class="swiper-slide">
+                <div class="swiper-wrapper">   
+                  <div class="swiper-slide flex flex-jc-c flex-ai-c text-ai-c">
                     <img src="/mac_img/image 151.png" alt="">
                   </div>
                   <div class="swiper-slide">
