@@ -934,7 +934,7 @@ a {
   width: 100%;
   height: 151px;
   transform: translateX(100%);
-  animation: example1 20s linear infinite;
+  animation: example1 25s infinite;
 }
 
 @keyframes example1 {
@@ -962,7 +962,7 @@ a {
 }
 
 .txt_ani > div > ul > li {
-  --border-width: 1.5px;
+  --border-width: 2.5px;
   --color: rgba(0, 0, 0, 1);
   color: white;
   text-shadow: 
@@ -978,7 +978,6 @@ a {
 .sns_box {
   width: 100%;
   height: 576px;
-  border: 3px solid red;
 }
 
 .sns_text {
@@ -1021,6 +1020,11 @@ a {
 .swiper-slide-active + .swiper-slide,
 .swiper-slide-active + .swiper-slide + .swiper-slide,
 .swiper-slide-active + .swiper-slide + .swiper-slide + .swiper-slide {opacity:1}
+
+.sns_play{
+  position: absolute;
+  z-index: 15;
+}
 /* 인스타그램 끝 */
 
 /* footer시작 */
