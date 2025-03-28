@@ -27,51 +27,66 @@ var swiper = new Swiper(".swiper_md2", {
 AOS.init();
 
 // md3
-document.addEventListener("DOMContentLoaded", function () {
-  const firstObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("text-focus-in"); // 첫 번째 애니메이션 실행
-          entry.target.style.opacity = "1";
+console.clear();
 
-          // 애니메이션이 끝난 후 실행되도록 설정
-          entry.target.addEventListener("animationend", function handleAnimationEnd() {
-            // 두 번째 애니메이션 감지를 시작
-            document.querySelectorAll(".mid_3_text_box2").forEach((el) => secondObserver.observe(el));
+function TypingEffect1__init($el) {
+    const text = $el.attr('data-text');
+    const inter = parseInt($el.attr('data-inter')) || 50; // 기본 타이핑 속도
+    const delay = parseInt($el.attr('data-delay')) || 0; // 개별 딜레이
 
-            // 한 번 실행된 후 다시 실행되지 않도록 이벤트 제거
-            entry.target.removeEventListener("animationend", handleAnimationEnd);
-          });
+    $el.find(' > div').empty();
+    const textBits = text.split('');
 
-          observer.unobserve(entry.target); // 첫 번째 애니메이션 실행 후 감지 해제
+    setTimeout(() => {
+        $el.data('typing-effect-1__index', 0);
+        $el.data('typing-effect-1__inter', inter);
+        $el.data('typing-effect-1__$div', $el.find(' > div'));
+
+        TypingEffect1__start($el, textBits);
+    }, delay);
+}
+
+function TypingEffect1__start($el, textBits) {
+    const index = $el.data('typing-effect-1__index');
+    const inter = $el.data('typing-effect-1__inter');
+    const $div = $el.data('typing-effect-1__$div');
+
+    setTimeout(function () {
+        $div.append(textBits[index]);
+
+        if (index + 1 == textBits.length) {
+            return;
         }
-      });
-    },
-    {
-      threshold: 0.3, // 30% 보였을 때 실행
-    }
-  );
 
-  const secondObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("focus-in-contract-bck"); // 두 번째 애니메이션 실행
-          observer.unobserve(entry.target); // 두 번째 애니메이션 실행 후 감지 해제
-        }
-      });
-    },
-    {
-      threshold: 1.0, // 100% 보였을 때 실행
-    }
-  );
+        $el.data('typing-effect-1__index', index + 1);
 
-  // 첫 번째 애니메이션을 감지할 요소 등록
-  document.querySelectorAll(".mid_3_text_box1").forEach((el) => firstObserver.observe(el));
+        TypingEffect1__start($el, textBits);
+    }, inter);
+}
+
+// 👇 스크롤 시 요소 감지 후 실행
+function observeTypingEffect() {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const $el = $(entry.target);
+                if (!$el.hasClass("activated")) {
+                    $el.addClass("activated"); // 한 번만 실행되도록 설정
+                    TypingEffect1__init($el);
+                }
+            }
+        });
+    }, { threshold: 0.8 }); // 요소가 50% 이상 보이면 실행
+
+    $(".typing-effect-1").each((index, el) => {
+        observer.observe(el);
+    });
+}
+
+// 페이지 로드 후 실행
+$(document).ready(() => {
+    observeTypingEffect();
 });
-
-
 
 //md4
 var swiper = new Swiper(".swiper_md4", {

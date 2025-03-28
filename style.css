@@ -654,107 +654,48 @@ a {
 .mid_3_text_box1 {
   font-size: 60px;
   margin-bottom: 39px;
-  opacity: 0;
-}
-
-.text-focus-in {
-	-webkit-animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
- @-webkit-keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes text-focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
 }
 
 .mid_3_text_box2 {
   font-size: 260px;
-  opacity: 0;
+  margin-bottom: 39px;
 }
 
-.focus-in-contract-bck {
-	-webkit-animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  opacity: 1;
+.typing-effect-1 {
+  display: flex;
 }
 
-@-webkit-keyframes focus-in-contract-bck {
+.typing-effect-1 > div {
+  position: relative;
+}
+
+.typing-effect-1  > div::after {
+  content: "|";
+  animation-name: ani-1;
+  animation-iteration-count: infinite;
+  animation-duration: .5s;
+  animation-direction: alternate-reverse;
+  visibility:hidden;
+}
+
+.box-3  > div::after {
+  content: "|";
+  animation-name: ani-1;
+  animation-iteration-count: infinite;
+  animation-duration: .5s;
+  animation-direction: alternate-reverse;
+  visibility:visible;
+}
+
+@keyframes ani-1 {
   0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
-            transform: translateZ(300px);
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
+      opacity: 0;
   }
+  
   100% {
-    -webkit-transform: translateZ(12px);
-            transform: translateZ(12px);
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
+      opacity: 1;
   }
 }
-@keyframes focus-in-contract-bck {
-  0% {
-    letter-spacing: 1em;
-    -webkit-transform: translateZ(300px);
-            transform: translateZ(300px);
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateZ(12px);
-            transform: translateZ(12px);
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-
-/* .focus-in-contract-bck {
-  -webkit-animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-          animation: focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  white-space: nowrap; 
-  max-width: 100%; 
-  display: inline-block; 
-  transform-origin: center; 
-}
-
-@keyframes focus-in-contract-bck {
-  0% {
-    letter-spacing: 0.05em; 
-    transform: scale(0.8); 
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    letter-spacing: normal;
-    transform: scale(1);
-    filter: blur(0);
-    opacity: 1;
-  } */
 
 .mid_3_text_box3 {
   font-size: 30px;
