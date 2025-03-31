@@ -90,6 +90,8 @@ a {
 /* 탑바 시작 */
 .topbar_box{
   height: 95px;
+  width: 100%;
+  background-color: black;
 }
 
 .topbar_menu{
@@ -790,6 +792,7 @@ a {
   width: 383px;
   height: 370px;
   background-color: white;
+  cursor: pointer;
 }
 
 .md4_slide_box .md4_img_box img{
@@ -932,7 +935,7 @@ a {
   width: 100%;
   height: 151px;
   transform: translateX(100%);
-  animation: example1 25s infinite;
+  animation: example1 25s linear infinite;
 }
 
 @keyframes example1 {
