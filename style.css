@@ -182,7 +182,7 @@ a {
 
 /* 탑바 검색부분 */
 .topbar_search{
-  margin-left: 393px;
+  margin-left: 520px;
   gap: 20px;
 }
 
@@ -194,14 +194,11 @@ a {
 }
 
 .topbar_search > .search_box > i {
-  width:17px;
-  height: 17px;
   margin: 0 13px 0 16px;
-  font-size: 17px;
 }
 
 .topbar_search i {
-  font-size: 17px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -393,8 +390,7 @@ a {
   width: 100%;
   top: 0;
   font-size: 120px;
-  /* font-weight: 900; */
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .mid_box > .mid_txt > .mid_text_box div {
@@ -645,13 +641,11 @@ a {
   position: absolute;
   top: 10px;
   z-index: -1;
-
 }
 
 .mid_3_box{
   width: 100%;
   height: 1193px;
-  letter-spacing: 3px;
 }
 
 .mid_3_text_box1 {
@@ -661,50 +655,16 @@ a {
 
 .mid_3_text_box2 {
   font-size: 260px;
-  margin-bottom: 39px;
-}
-
-.typing-effect-1 {
-  display: flex;
-}
-
-.typing-effect-1 > div {
-  position: relative;
-}
-
-.typing-effect-1  > div::after {
-  content: "|";
-  animation-name: ani-1;
-  animation-iteration-count: infinite;
-  animation-duration: .5s;
-  animation-direction: alternate-reverse;
-  visibility:hidden;
-}
-
-.box-3  > div::after {
-  content: "|";
-  animation-name: ani-1;
-  animation-iteration-count: infinite;
-  animation-duration: .5s;
-  animation-direction: alternate-reverse;
-  visibility:visible;
-}
-
-@keyframes ani-1 {
-  0% {
-      opacity: 0;
-  }
-  
-  100% {
-      opacity: 1;
-  }
 }
 
 .mid_3_text_box3 {
   font-size: 30px;
   width: 225px;
   height: 57px;
-  margin-left: 1050px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1000px;
   gap: 12px;
   border-radius: 100px;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
@@ -1060,13 +1020,13 @@ a {
 .b_img_box img {
   width: 312px;
   height: 57px;
-  margin: 149px 0 0 194px;
+  margin: 149px 0 0 124px;
 }
 
 .b_txt {
   font-size: 12px;
   color: #808080;
-  margin: 149px 0 0 194px;
+  margin: 149px 0 0 124px;
 }
 
 /* right */
@@ -1075,6 +1035,7 @@ a {
   font-weight: 500; /* 미디엄 */
   margin-top: 149px;
   gap: 50px;
+  white-space: nowrap;
 }
 
 .b_right_1  span {
